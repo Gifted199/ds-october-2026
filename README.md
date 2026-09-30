@@ -2,6 +2,7 @@
 
 An 8-week programme from machine learning to multi-agent AI, with a Week 0 onboarding sprint.
 
+- **Repository:** <https://github.com/samuelts96/ds-october-2026>
 - **Syllabus:** [syllabus/DS_Agentic_AI_Syllabus.pdf](syllabus/DS_Agentic_AI_Syllabus.pdf)
 - **Dates:** Week 0 Wed 30 Sep - Fri 2 Oct 2026, then Weeks 1-8 Mon 5 Oct - Fri 27 Nov 2026
 - **Progress tracking:** the DS October Trello board (one card per person per week)
@@ -56,12 +57,12 @@ These are the commands we use from day one.
 
 ### Fork and clone
 
-1. On GitHub, open this repository and click **Fork** to make your own copy.
+1. Open <https://github.com/samuelts96/ds-october-2026> and click **Fork** to make your own copy.
 2. Clone **your fork** to your laptop:
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/<your-username>/ds-october-2026.git
+cd ds-october-2026
 ```
 
 ### Create a new branch
@@ -191,7 +192,7 @@ To give up and go back: `git merge --abort` or `git rebase --abort`.
 Your fork doesn't update itself when the original repo changes. Add the original as `upstream` once:
 
 ```bash
-git remote add upstream https://github.com/<trainer-account>/<repo-name>.git
+git remote add upstream https://github.com/samuelts96/ds-october-2026.git
 git remote -v               # origin = your fork, upstream = the original
 ```
 
