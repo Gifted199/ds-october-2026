@@ -16,7 +16,97 @@ An 8-week programme from machine learning to multi-agent AI, with a Week 0 onboa
 
 ---
 
-# Git guide
+# Start here: the essentials
+
+These are the commands you'll use every day. Everything under **Reference** further down is extra help for when you need it.
+
+## 1. Install your tools
+
+| Tool | Get it |
+|---|---|
+| **VS Code** | Download from <https://code.visualstudio.com/download>, then install the **Python** and **Jupyter** extensions |
+| **uv** | See the install commands below |
+| Git + GitHub | Download Git from <https://git-scm.com/downloads> and create an account at <https://github.com> |
+
+Install uv:
+
+```bash
+# macOS / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+```powershell
+# Windows (PowerShell)
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+Check it worked: `uv --version`
+
+## 2. uv: create a project and its environment
+
+| Command | What it does |
+|---|---|
+| `uv init <project-name>` | Create a new Python project (`pyproject.toml`, `main.py`, `.python-version`) |
+| `uv venv` | Create the project's virtual environment in `.venv` |
+
+```bash
+uv init week0-eda
+cd week0-eda
+uv venv
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
+```
+
+Useful next steps: `uv add pandas jupyter` installs packages into the environment, and `uv run python main.py` runs code inside it.
+
+## 3. Git: the daily loop
+
+| Command | What it does |
+|---|---|
+| `git pull` | Get the latest changes from GitHub. **Do this first.** |
+| `git add .` | Stage all your changes |
+| `git commit -m "message"` | Save a snapshot with a short message |
+| `git push` | Upload your commits to GitHub |
+
+```bash
+git pull
+git add .
+git commit -m "Add Week 0 EDA notebook"
+git push
+```
+
+The first time you push a new branch, use `git push -u origin <branch-name>`. After that, plain `git push` works.
+
+## 4. Git: branches and status
+
+| Command | What it does |
+|---|---|
+| `git status` | Show which files changed and what's staged. **Run it often.** |
+| `git branch` | List branches; `*` marks the one you're on |
+| `git checkout -b <branch-name>` | Create a new branch and switch to it |
+
+```bash
+git status
+git branch
+git checkout -b week0/<your-name>
+```
+
+Never work directly on `main`: create a branch for each piece of work. (`git switch -c <branch-name>` does the same as `git checkout -b`.)
+
+## 5. Putting it together: your Week 0 task
+
+1. Fork <https://github.com/samuelts96/ds-october-2026> on GitHub, then clone **your fork**:
+   ```bash
+   git clone https://github.com/<your-username>/ds-october-2026.git
+   cd ds-october-2026
+   ```
+2. Create your branch: `git checkout -b week0/<your-name>`
+3. Create a project and environment: `uv init week0-eda`, then `cd week0-eda` and `uv venv`
+4. Add a notebook in VS Code that loads and explores a dataset
+5. Save your work to GitHub: `git status`, `git add .`, `git commit -m "Add Week 0 EDA notebook"`, `git push -u origin week0/<your-name>`
+
+---
+
+# Reference: more Git help
 
 Git tracks changes to your files. GitHub hosts Git repositories online so you can share and back them up.
 
@@ -51,11 +141,7 @@ edit files  ->  git add  ->  git commit  ->  git push
 (working)       (staged)     (local history)  (GitHub)
 ```
 
-## 3. Week 0 essentials
-
-These are the commands we use from day one.
-
-### Fork and clone
+## 3. Fork and clone
 
 1. Open <https://github.com/samuelts96/ds-october-2026> and click **Fork** to make your own copy.
 2. Clone **your fork** to your laptop:
@@ -64,29 +150,6 @@ These are the commands we use from day one.
 git clone https://github.com/<your-username>/ds-october-2026.git
 cd ds-october-2026
 ```
-
-### Create a new branch
-
-Never work directly on `main`. Create a branch for each piece of work:
-
-```bash
-git checkout -b week0/<your-name>     # create the branch and switch to it
-git branch                            # list branches; * marks the current one
-```
-
-(`git switch -c <branch>` is the newer equivalent of `git checkout -b <branch>`.)
-
-### Add, commit, push
-
-```bash
-git status                            # see what changed
-git add .                             # stage every change in this folder
-git commit -m "Add Week 0 EDA notebook"
-git push -u origin week0/<your-name>  # first push of a new branch
-git push                              # later pushes on the same branch
-```
-
-`-u` links your local branch to the one on GitHub, so later you can just run `git push` and `git pull`.
 
 ## 4. Everyday commands
 
