@@ -6,6 +6,8 @@ One more for the sake of it
 I have just created a branch name which is "new branch"
 This is another test on the new branch
 
+FAITHFULL AND TRUE
+
 An 8-week programme from machine learning to multi-agent AI, with a Week 0 onboarding sprint.
 
 - **Repository:** <https://github.com/samuelts96/ds-october-2026>
