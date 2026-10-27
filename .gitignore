@@ -1,5 +1,29 @@
+# Python environments and cache
+
 .venv/
-__pycache__/
+**pycache**/
+*.py[cod]
 .ipynb_checkpoints/
+
+# Local configuration and secrets
+
 .env
+.env.*
+!.env.example
+
+# Local MLflow tracking data
+
+mlflow.db
+mlflow.db-shm
+mlflow.db-wal
+mlruns/
+
+# Editor and AI assistant settings
+
+.vscode/
+.kilo/
+
+# Operating system files
+
 .DS_Store
+Thumbs.db

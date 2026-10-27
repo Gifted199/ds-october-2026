@@ -1,0 +1,26 @@
+[project]
+name = "hello-github"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Gifted199", email = "akinloluoyetakin199@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "imbalanced-learn>=0.14.2",
+    "matplotlib>=3.11.2",
+    "mlflow>=3.17.1",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "tensorflow>=2.22.0rc0",
+]
+
+[project.scripts]
+hello-github = "hello_github:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
