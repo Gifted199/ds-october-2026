@@ -81,11 +81,25 @@ Interactive reference pages (HTML) and notebooks for the **Data Science & Agenti
 | ⬜ | Time series: trend, seasonality, stationarity, forecasting | |
 | ⬜ | Streamlit apps | |
 
+## Week 4 · NLP, Transformers & Large Language Models
+*Mon 26 – Fri 30 Oct* · setup: [week4/README.md](../week4/README.md)
+
+| | Topic | Where |
+|---|---|---|
+| ✅ | NLP basics: tokenisation, normalisation, stop words (keeping negations), stemming vs lemmatisation, n-grams | [NLP basics notebook](../week4/01_nlp_vectorization_restaurant_reviews.ipynb) |
+| ✅ | Vectorisation: Bag of Words, TF-IDF, Word2Vec (CBOW vs skip-gram), GloVe | [NLP basics notebook](../week4/01_nlp_vectorization_restaurant_reviews.ipynb) |
+| ✅ | Vectors vs embeddings, with model examples | [NLP basics notebook](../week4/01_nlp_vectorization_restaurant_reviews.ipynb) |
+| ✅ | Attention, transformers and BERT (contextual embeddings) | [NLP basics notebook](../week4/01_nlp_vectorization_restaurant_reviews.ipynb) |
+| ✅ | From embeddings to LLMs: how LLMs are trained, in brief | [NLP basics notebook](../week4/01_nlp_vectorization_restaurant_reviews.ipynb) |
+| ✅ | Prompt engineering: zero-shot, few-shot, structured output, chain of thought, tree of thought | [Prompt engineering notebook](../week4/02_prompt_engineering_llms.ipynb) |
+| ✅ | Guardrails and LLM-as-a-judge | [Prompt engineering notebook](../week4/02_prompt_engineering_llms.ipynb) |
+| ✅ | RAG basics: semantic search, grounded answers with citations | [NLP basics notebook](../week4/01_nlp_vectorization_restaurant_reviews.ipynb) · [Prompt engineering notebook](../week4/02_prompt_engineering_llms.ipynb) |
+| ✅ | Calling Azure OpenAI; running and serving an LLM locally (Ollama, FastAPI) | [Prompt engineering notebook](../week4/02_prompt_engineering_llms.ipynb) |
+
 ## Coming up (not documented yet)
 
 | Week | | Topic |
 |---|---|---|
-| 4 · NLP, Transformers & LLMs | ⬜ | Text preparation, embeddings, attention, transformers, BERT / GPT / T5, Hugging Face, LLM APIs, prompting |
 | 5 · Embeddings & RAG | ⬜ | Chunking, vector databases, hybrid retrieval, re-ranking, RAG evaluation |
 | 6 · Fine-tuning & guardrails | ⬜ | LoRA / QLoRA, instruction tuning, RLHF / DPO, LLM evaluation, guardrails |
 | 7 · Single-agent systems | ⬜ | Agent loop, tool calling, memory, planning, LangGraph, MCP |

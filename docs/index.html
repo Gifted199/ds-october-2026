@@ -124,6 +124,9 @@
     mlflow: { kind: "Page", title: "MLflow & experiment tracking", desc: "Runs, params, metrics, artifacts, autolog, comparing runs, model registry, champion / challenger", href: "week2/mlflow-experiment-tracking.html" },
     mlops: { kind: "Page", title: "MLflow & the MLOps pipeline", desc: "Tagging and comparing runs, model registry, champion vs challenger, monitoring, drift (PSI), retraining and promotion", href: "week2/mlflow-mlops-pipeline.html" },
     fastapi: { kind: "Page", title: "FastAPI & serving models", desc: "URLs, IPv4, localhost, ports, routes and endpoints, HTTP methods, status codes 200 / 4xx / 5xx, serving the champion", href: "week2/fastapi-serving.html" },
+    nlp4: { kind: "Notebook", title: "NLP basics & vectorisation", desc: "Tokenisation, stop words, lemmatisation, BoW, TF-IDF, Word2Vec, GloVe, BERT, sentence embeddings on restaurant reviews", href: "https://github.com/samuelts96/ds-october-2026/blob/main/week4/01_nlp_vectorization_restaurant_reviews.ipynb" },
+    prompt4: { kind: "Notebook", title: "Prompt engineering & LLMs", desc: "Azure OpenAI / Ollama, zero- and few-shot, CoT, tree of thought, guardrails, LLM-as-a-judge, RAG basics", href: "https://github.com/samuelts96/ds-october-2026/blob/main/week4/02_prompt_engineering_llms.ipynb" },
+    setup4: { kind: "Brief", title: "Week 4 setup", desc: "Packages and the Azure OpenAI .env settings", href: "https://github.com/samuelts96/ds-october-2026/blob/main/week4/README.md" },
     brief2: { kind: "Brief", title: "Week 2 sprint brief", desc: "Write your own tickets, train 3+ DL models, track them in MLflow, present", href: BRIEF2 },
   };
 
@@ -184,10 +187,16 @@
       ["Time series: trend, seasonality, stationarity, forecasting", "t", []],
       ["Streamlit apps", "t", []],
     ]},
-    { n: 4, title: "NLP, Transformers & Large Language Models", dates: "Mon 26 – Fri 30 Oct", docs: [], topics: [
-      ["Text preparation: tokenisation, bag-of-words, TF-IDF, word embeddings", "t", []],
-      ["Attention and the transformer architecture", "t", []],
-      ["BERT, GPT, T5; Hugging Face; LLM APIs; prompting and structured output", "t", []],
+    { n: 4, title: "NLP, Transformers & Large Language Models", dates: "Mon 26 – Fri 30 Oct", docs: ["nlp4", "prompt4", "setup4"], topics: [
+      ["NLP basics: tokenisation, normalisation, stop words (keeping negations), stemming vs lemmatisation, n-grams", "c", ["nlp4"]],
+      ["Vectorisation: Bag of Words, TF-IDF, Word2Vec (CBOW vs skip-gram), GloVe", "c", ["nlp4"]],
+      ["Vectors vs embeddings, with model examples", "c", ["nlp4"]],
+      ["Attention, transformers and BERT (contextual embeddings)", "c", ["nlp4"]],
+      ["From embeddings to LLMs: how LLMs are trained, in brief", "c", ["nlp4"]],
+      ["Prompt engineering: zero-shot, few-shot, structured output, chain of thought, tree of thought", "c", ["prompt4"]],
+      ["Guardrails and LLM-as-a-judge", "c", ["prompt4"]],
+      ["RAG basics: semantic search, grounded answers with citations", "c", ["nlp4", "prompt4"]],
+      ["Calling Azure OpenAI; running and serving an LLM locally (Ollama, FastAPI)", "c", ["prompt4", "setup4"]],
     ]},
     { n: 5, title: "Embeddings & Retrieval-Augmented Generation", dates: "Mon 2 – Fri 6 Nov", docs: [], topics: [
       ["Chunking, embeddings, vector databases, hybrid retrieval, re-ranking, RAG evaluation", "t", []],
