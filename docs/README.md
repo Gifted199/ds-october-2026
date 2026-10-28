@@ -91,12 +91,12 @@ Interactive reference pages (HTML) and notebooks for the **Data Science & Agenti
 | ✅ | Vectors vs embeddings, with model examples | [NLP basics & embeddings](week4/nlp-basics.html) · [NLP basics notebook](../week4/01_nlp_vectorization_restaurant_reviews.ipynb) |
 | ✅ | Attention, transformers and BERT (contextual embeddings) | [NLP basics & embeddings](week4/nlp-basics.html) · [NLP basics notebook](../week4/01_nlp_vectorization_restaurant_reviews.ipynb) |
 | ✅ | From embeddings to LLMs: how LLMs are trained, in brief | [NLP basics & embeddings](week4/nlp-basics.html) · [NLP basics notebook](../week4/01_nlp_vectorization_restaurant_reviews.ipynb) |
-| ✅ | Prompt engineering: zero-shot, few-shot, structured output, chain of thought, tree of thought | [Prompt engineering](week4/prompt-engineering.html) · [Prompt engineering notebook](../week4/02_prompt_engineering_llms.ipynb) · [Simple prompting notebook](../week4/03_prompt_engineering_simple.ipynb) |
-| ✅ | Guardrails and LLM-as-a-judge | [Prompt engineering](week4/prompt-engineering.html) · [Prompt engineering notebook](../week4/02_prompt_engineering_llms.ipynb) · [Simple prompting notebook](../week4/03_prompt_engineering_simple.ipynb) |
-| ✅ | RAG basics: semantic search, grounded answers with citations | [NLP basics & embeddings](week4/nlp-basics.html) · [Prompt engineering](week4/prompt-engineering.html) · [NLP basics notebook](../week4/01_nlp_vectorization_restaurant_reviews.ipynb) · [Prompt engineering notebook](../week4/02_prompt_engineering_llms.ipynb) |
-| ✅ | Calling Azure OpenAI; running and serving an LLM locally (Ollama, FastAPI) | [Prompt engineering](week4/prompt-engineering.html) · [Prompt engineering notebook](../week4/02_prompt_engineering_llms.ipynb) · [Simple prompting notebook](../week4/03_prompt_engineering_simple.ipynb) |
-| ✅ | Structured outputs validated with Pydantic (with a retry) | [Prompt engineering](week4/prompt-engineering.html) · [Simple prompting notebook](../week4/03_prompt_engineering_simple.ipynb) |
-| ✅ | Comparing prompting strategies: field-level accuracy on a labelled set | [Prompt engineering](week4/prompt-engineering.html) · [Simple prompting notebook](../week4/03_prompt_engineering_simple.ipynb) |
+| ✅ | Prompt engineering: zero-shot, few-shot, structured output, chain of thought, tree of thought | [Prompt engineering](week4/prompt-engineering.html) · [Prompt engineering notebook](../week4/02_prompt_engineering_simple.ipynb) |
+| ✅ | Guardrails and LLM-as-a-judge | [Prompt engineering](week4/prompt-engineering.html) · [Prompt engineering notebook](../week4/02_prompt_engineering_simple.ipynb) |
+| ✅ | RAG basics: semantic search, grounded answers with citations | [NLP basics & embeddings](week4/nlp-basics.html) · [Prompt engineering](week4/prompt-engineering.html) · [NLP basics notebook](../week4/01_nlp_vectorization_restaurant_reviews.ipynb) |
+| ✅ | Calling Azure OpenAI; running and serving an LLM locally (Ollama, FastAPI) | [Prompt engineering](week4/prompt-engineering.html) · [Prompt engineering notebook](../week4/02_prompt_engineering_simple.ipynb) |
+| ✅ | Structured outputs validated with Pydantic (with a retry) | [Prompt engineering](week4/prompt-engineering.html) · [Prompt engineering notebook](../week4/02_prompt_engineering_simple.ipynb) |
+| ✅ | Comparing prompting strategies: field-level accuracy on a labelled set | [Prompt engineering](week4/prompt-engineering.html) · [Prompt engineering notebook](../week4/02_prompt_engineering_simple.ipynb) |
 
 ## Coming up (not documented yet)
 
