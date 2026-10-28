@@ -15,12 +15,11 @@ Both use the same dataset: 1,000 restaurant reviews labelled liked / not liked (
 uv add pandas numpy scikit-learn matplotlib nltk gensim sentence-transformers transformers torch openai python-dotenv pydantic jupyter
 ```
 
-**Notebook 2 uses Azure OpenAI.** Copy [`.env.example`](.env.example) to `.env` in the same folder as the notebooks and fill in the values the trainer shares:
+**Notebook 2 uses Azure OpenAI** (the v1 API, so no `api-version` is needed). Copy [`.env.example`](.env.example) to `.env` in the same folder as the notebooks and fill in the values the trainer shares:
 
 ```bash
-AZURE_OPENAI_API_KEY=...
 AZURE_OPENAI_ENDPOINT=https://<your-resource>.openai.azure.com/
-AZURE_OPENAI_API_VERSION=2024-10-21
+AZURE_OPENAI_API_KEY=...
 AZURE_OPENAI_DEPLOYMENT=<your-chat-deployment-name>
 ```
 
