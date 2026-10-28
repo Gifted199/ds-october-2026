@@ -12,15 +12,20 @@ Both use the same dataset: 1,000 restaurant reviews labelled liked / not liked (
 ## Setup
 
 ```bash
-uv add pandas numpy scikit-learn matplotlib nltk gensim sentence-transformers transformers torch openai pydantic jupyter
+uv add pandas numpy scikit-learn matplotlib nltk gensim sentence-transformers transformers torch openai python-dotenv pydantic jupyter
 ```
 
-**Notebook 2 needs an LLM.** The easiest is a local one with [Ollama](https://ollama.com/download):
+**Notebook 2 uses Azure OpenAI.** Copy [`.env.example`](.env.example) to `.env` in the same folder as the notebooks and fill in the values the trainer shares:
 
 ```bash
-ollama pull llama3.2:3b      # ~2 GB; the Ollama server runs on http://localhost:11434
+AZURE_OPENAI_API_KEY=...
+AZURE_OPENAI_ENDPOINT=https://<your-resource>.openai.azure.com/
+AZURE_OPENAI_API_VERSION=2024-10-21
+AZURE_OPENAI_DEPLOYMENT=<your-chat-deployment-name>
 ```
 
-To use a cloud model instead, set `LLM_BASE_URL`, `LLM_MODEL` and `OPENAI_API_KEY` as environment variables before starting Jupyter (see Part 1 of the notebook). Never put API keys in a notebook.
+`.env` is in `.gitignore`: **never commit it, and never paste keys into a notebook**.
+
+**Optional: a local model.** Install [Ollama](https://ollama.com/download), run `ollama pull llama3.2:3b`, and set `LLM_PROVIDER=ollama` in `.env`. The same notebook code works with both.
 
 Notebook 1 is saved with all its outputs. In Notebook 2, the cells marked **🤖 calls the LLM** are saved without outputs: run them yourself, because answers vary between models and runs.
